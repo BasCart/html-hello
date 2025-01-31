@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+</head>
+<body>
+    <div class="container-fluid">
+        <form class="container my-5 ps-0 pe-0 border rounded">
+            <h2 class="bg-light border-bottom p-3">
+                Payment form example
+            </h2>
+            <p class=" alert alert-danger mt-3 mx-3" role="alert">Some fields are missing</p>
+            <div class="row pt-1 mx-2">                        
+                <div class="col-5">
+                    <p class="mb-1">Card #</p>                                 
+                    <input type="numeric" class="form-control" placeholder="XXXXXXXXXXXXXXXX" >
+                </div>
+                <div class="col-3">
+                    <p class="mb-1">CVC #</p>
+                    <input type="numeric" class="form-control" placeholder="0000">
+                </div>
+                <div class="col-4">
+                    <p class="mb-1">Amount</p>                                 
+                    <input type="numeric" class="form-control" placeholder="Amount">
+                </div>
+            </div>               
+            <div class="row pt-3 mx-2">
+                <div class="col-6">
+                    <p class="mb-1">First Name</p>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="col-6">
+                    <p class="mb-1">Last Name</p>
+                    <input type="text" class="form-control" >                            
+                </div>
+            </div>                           
+            <div class="row pt-3 mx-2">
+                <div class="col-6 mb-1">
+                    <p class="mb-1">City</p>
+                    <input type="text" class="form-control" name="City">
+                </div>
+                <div class="col-3 mb-1">
+                    <p class="mb-1">State</p>
+                    <select class="form-select" id="State" aria-label="select example">
+                        <option selected>Pick a state</option>
+                        <option value="1">State One</option>
+                        <option value="2">State Two</option>
+                        <option value="3">State Three</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <p class="mb-1">Postal Code</p>
+                    <input type="text" class="form-control" id="Postal">
+                </div>
+            </div>
+            <div class="row pt-2 d-flex justify-content-between mx-2 mb-4">
+                <div class="col-3">
+                    <p>We accept</p>
+                    <div class="form-control bg-secondary">
+                        <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="banco" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                        </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="banco" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <i class="fa-brands fa-cc-visa"></i>
+                        </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="banco" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <i class="fa-brands fa-cc-diners-club"></i>
+                        </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="banco" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <i class="fa-brands fa-cc-discover"></i>
+                        </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label for="Message" class="mb-2">Message</label>
+                    <textarea id="Message" class="form-control"></textarea>
+                    <p>Add any notes here</p> 
+                </div>
+            </div>
+            <div class="d-flex justify-content-end border-top pt-2 pb-2 bg-light">
+                    <button type="button" class="btn btn-secondary text-white" value="Cancel">Cancel</button>
+                    <button type="submit" class="btn btn-primary text-white ms-1 me-3" value="Send">Send</button>
+            </div>
+            
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/389412bbfd.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
