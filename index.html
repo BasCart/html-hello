@@ -16,35 +16,35 @@
             <p class=" alert alert-danger mt-3 mx-3" role="alert">Some fields are missing</p>
             <div class="row pt-1 mx-2">                        
                 <div class="col-5">
-                    <p class="mb-1">Card #</p>                                 
-                    <input type="tel" class="form-control" placeholder="XXXXXXXXXXXXXXXX" >
+                    <label for="card" class="mb-1">Card #</label>                                 
+                    <input type="tel" class="form-control" id="card" placeholder="XXXXXXXXXXXXXXXX" >
                 </div>
                 <div class="col-3">
-                    <p class="mb-1">CVC #</p>
-                    <input type="tel" class="form-control" placeholder="0000">
+                    <label for="cvc" class="mb-1" >CVC #</label>
+                    <input type="tel" class="form-control" id="cvc" placeholder="0000">
                 </div>
                 <div class="col-4">
-                    <p class="mb-1">Amount</p>                                 
-                    <input type="tel" class="form-control" placeholder="Amount">
+                    <label for="Amount" class="mb-1">Amount</label>                                 
+                    <input type="tel" class="form-control" id="Amount" placeholder="Amount">
                 </div>
             </div>               
             <div class="row pt-3 mx-2">
                 <div class="col-6">
-                    <p class="mb-1">First Name</p>
-                    <input type="text" class="form-control" >
+                    <label for="f-name" class="mb-1">First Name</label>
+                    <input type="text" class="form-control" id="f-name" >
                 </div>
                 <div class="col-6">
-                    <p class="mb-1">Last Name</p>
-                    <input type="text" class="form-control" >                            
+                    <label for="l-name" class="mb-1">Last Name</label>
+                    <input type="text" class="form-control" id="l-name" >                            
                 </div>
             </div>                           
             <div class="row pt-3 mx-2">
                 <div class="col-6 mb-1">
-                    <p class="mb-1">City</p>
-                    <input type="text" class="form-control" name="City">
+                    <label for="City" class="mb-1">City</label>
+                    <input type="text" class="form-control" name="City" id="City">
                 </div>
                 <div class="col-3 mb-1">
-                    <p class="mb-1">State</p>
+                    <label for="State" class="mb-1">State</label>
                     <select class="form-select" id="State" aria-label="select example">
                         <option selected>Pick a state</option>
                         <option value="1">State One</option>
@@ -53,7 +53,7 @@
                     </select>
                 </div>
                 <div class="col-3">
-                    <p class="mb-1">Postal Code</p>
+                    <label for="Postal" class="mb-1">Postal Code</label>
                     <input type="text" class="form-control" id="Postal">
                 </div>
             </div>
